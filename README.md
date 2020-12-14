@@ -31,7 +31,7 @@ dtoverlay=w1-gpio,gpiopin=24
 
 # Compile:
     - go build dht22.go
-    - go buold ds18b20.go
+    - go build ds18b20.go
 
 * go dependencies to be picked up in common manner
 
