@@ -15,15 +15,15 @@ ArchLinuxARM Raspberry PI Zero send sensors (DHT22, DS18B20) to influxdb v1.8 us
 * InfluxDB 1.8.3
 * /boot/config.txt:
 ```
-	gpu_mem=16
-	initramfs initramfs-linux.img followkernel
+gpu_mem=16
+initramfs initramfs-linux.img followkernel
 
-	device_tree=bcm2835-rpi-zero-w.dtb
+device_tree=bcm2835-rpi-zero-w.dtb
 
-	# does not work if below is enabled..
-	#dtoverlay=dht11,gpiopin=17
+# does not work if below is enabled..
+#dtoverlay=dht11,gpiopin=17
 
-	dtoverlay=w1-gpio,gpiopin=24
+dtoverlay=w1-gpio,gpiopin=24
 ```
 # Connections:
 	- DS18B20 data line connected to GPIO24
